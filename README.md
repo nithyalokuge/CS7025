@@ -4,7 +4,7 @@ This repository contains all lab exercises and assignments for the "Programming 
 
 ## Overview
 
-These labs include practical exercises to provide hands-on experience with the concepts discussed in lectures.
+These labs include practical exercises to provide hands-on experience with the concepts discussed in lectures. Some exercises were assigned by the professor, and I also did some on my own to understand the topics better.
 
 ## Lab Contents
 
