@@ -1,3 +1,5 @@
+// Exercises from lesson 2 slides (page 31, 32)
+
 let playerScore = 0;
 
 // Function that adds one to the playerScore
