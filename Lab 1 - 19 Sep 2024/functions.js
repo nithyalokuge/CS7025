@@ -1,6 +1,6 @@
 let playerScore = 0;
 
-// Function that add one to the playerScore
+// Function that adds one to the playerScore
 function addScore () {
     playerScore = playerScore + 1;
 }
