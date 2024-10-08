@@ -1,3 +1,5 @@
+// Lesson 2 slides exercises (page 30)
+
 // Create a set of variables
 let favouriteColour = "green";
 let favouriteAnimal = "dolphin";
