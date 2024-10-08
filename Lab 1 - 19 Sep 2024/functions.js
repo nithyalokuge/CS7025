@@ -1,12 +1,12 @@
 let playerScore = 0;
 
-// Function that add one to the playerScore
-function addScore () {
+// Function that adds one to the playerScore
+function addScore() {
     playerScore = playerScore + 1;
 }
 
 // Function that displays the value of the playerScore
-function displayScore () {
+function displayScore() {
     console.log(playerScore);
 }
 
