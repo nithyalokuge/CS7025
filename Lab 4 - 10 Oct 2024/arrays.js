@@ -7,14 +7,14 @@ console.log(fruits[4]);
 
 /* Add a new fruit to the beginning of the array. Add another fruit to the end of the array.
 Remove the first fruit from the array. Remove the last fruit from the array.*/
-fruits.unshift("peach");
+fruits.unshift("peach"); 
 fruits.push("kiwi");
 console.log(fruits[0]);
 console.log(fruits[6]);
 fruits.shift();
 fruits.pop();
 console.log(fruits[0]);
-console.log(fruits[4]);
+console.log(fruits[4]); 
 
 // Print each fruit using a for loop.
 for (let i = 0; i < 5; i++) {

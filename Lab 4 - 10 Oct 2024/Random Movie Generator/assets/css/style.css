@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 80vw;
+    margin: 40px auto;
+}
+
+img {
+    width: 50%;
+}
+
