@@ -1,8 +1,6 @@
-// Custom exercises
-
 // Write a for loop that prints the numbers from 1 to 10
-function printNumbers(){
-    for (let i = 1; i <= 10; i++){
+function printNumbers() {
+    for (let i = 1; i <= 10; i++) {
         console.log(i);
     }
 }
@@ -50,8 +48,8 @@ sum(numbers);
 /* Write a for loop that iterates from 1 to 10. 
 If the number 7 is encountered, stop the loop using the break statement. */
 function breakLoop() {
-    for (let i = 1; i <= 10; i++){
-        if (i === 7){
+    for (let i = 1; i <= 10; i++) {
+        if (i === 7) {
             console.log("Number 7 encountered. Loop stopped.");
             break;
         }
@@ -63,8 +61,8 @@ breakLoop();
 
 // Write a for loop that iterates from 1 to 10 but skips the number 5 using the continue statement
 function stopAtFive() {
-    for (let i = 1; i <=10; i++){
-        if (i === 5){
+    for (let i = 1; i <=10; i++) {
+        if (i === 5) {
             continue;
         }
         console.log(i);
@@ -74,10 +72,10 @@ function stopAtFive() {
 stopAtFive();
 
 // Write a do...while loop that prints numbers from 1 to 10 but skips odd numbers using continue
-function printEvenNum(){
+function printEvenNum() {
     let i = 1;
     do {
-        if (!(i % 2 === 0)){
+        if (!(i % 2 === 0)) {
             i++;
             continue;
         }
