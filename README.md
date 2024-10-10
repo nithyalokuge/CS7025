@@ -11,4 +11,5 @@ These labs include practical exercises to provide hands-on experience with the c
 - **Lab 1 (19 Sep 2024):** Variables, Functions, Operators
 - **Lab 2 (26 Sep 2024):** Conditions, Loops
 - **Lab 3 (3 Oct 2024):** DOM Manipulation
+- **Lab 4 (10 Oct 2024):** Arrays
 
