@@ -1,4 +1,4 @@
-// Custom exercise
+// Custom exercises
 
 // Write a for loop that prints the numbers from 1 to 10
 function printNumbers() {

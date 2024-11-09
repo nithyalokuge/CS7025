@@ -1,4 +1,4 @@
-// Custom exercise
+// Custom exercises
 
 // Check if a number is positive, negative, or zero
 function checkNumber(num) {

@@ -1,4 +1,4 @@
-// Custom exercise
+// Custom exercises
 
 // Make a copy of the first array
 let firstArr = [1,2,3,4];
