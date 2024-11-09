@@ -24,24 +24,24 @@ function getCookie(cookieKey) {
 }
   
 // Expires in 1 day
-setCookie('username', 'Jim', 1); 
+setCookie("button", "clicked", 1); 
   
 // Function to update the click count in localStorage and on the page
 function updateClickCount() {
-    let clickCount = localStorage.getItem('clickCount');
+    let clickCount = localStorage.getItem("clickCount");
     if (!clickCount) {
         clickCount = 0;
     }
     clickCount = parseInt(clickCount) + 1;
-    localStorage.setItem('clickCount', clickCount);
-    document.getElementById('clickCountDisplay').textContent = `Button clicked ${clickCount} times.`;
+    localStorage.setItem("clickCount", clickCount);
+    document.getElementById("clickCountDisplay").textContent = `Button clicked ${clickCount} times.`;
 }
   
 // Display initial click count on page load
 window.onload = function() {
-    let clickCount = localStorage.getItem('clickCount');
+    let clickCount = localStorage.getItem("clickCount");
     if (!clickCount) {
         clickCount = 0;
     }
-    document.getElementById('clickCountDisplay').textContent = `Button clicked ${clickCount} times.`;
+    document.getElementById("clickCountDisplay").textContent = `Button clicked ${clickCount} times.`;
 }
