@@ -1,4 +1,4 @@
-// Custom exercises
+// Custom exercise
 
 // Create an array with the names of 5 different fruits. Print the first and last element of the array.
 let fruits = ["apple", "banana", "pear", "mango", "strawberry"];

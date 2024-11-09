@@ -1,4 +1,4 @@
-// Custom exercises
+// Custom exercise
 
 // Create a 2D array that represents a 3x3 matrix, where each element is a number
 let matrix = [
