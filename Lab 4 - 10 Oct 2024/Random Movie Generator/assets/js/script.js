@@ -6,7 +6,6 @@ let moviePosters = [
 
 document.addEventListener("DOMContentLoaded", (event) => {
     let randomMovieButton = document.getElementById("generate-image");
-
     randomMovieButton.addEventListener("click", (event) => {
         console.log("clicked");
         let moviePosterImage = document.getElementById("movie-poster-image");

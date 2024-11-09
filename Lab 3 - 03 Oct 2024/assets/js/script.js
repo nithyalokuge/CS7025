@@ -19,7 +19,8 @@ fetch("assets/js/capitals.json")
 
         // Loop through each object in the JSON array
         data.forEach(item => {
-            const row = document.createElement("tr"); // Create a new row
+            // Create a new row
+            const row = document.createElement("tr"); 
             const countryCell = document.createElement("td"); 
             const capitalCell = document.createElement("td"); 
 
@@ -42,6 +43,6 @@ fetch("assets/js/capitals.json")
         table.appendChild(tbody);
 
         // Append the table to the container
-        document.getElementById('table-container').appendChild(table);
+        document.getElementById("table-container").appendChild(table);
     })
-    .catch(error => console.error('Error fetching data:', error));
+    .catch(error => console.error("Error fetching data: ", error));

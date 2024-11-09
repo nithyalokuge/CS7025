@@ -15,7 +15,7 @@ console.log(matrix[1][2]);
 matrix[0][1] = 10;
 console.log(matrix[0][1]);
 
-// Write a nested loop to print each element of the 2D array on a new line.
+// Write a nested loop to print each element of the 2D array on a new line
 for (let i = 0; i < 3; i++) {
     for (let j = 0; j < 3; j++){
         console.log(matrix[i][j]);
