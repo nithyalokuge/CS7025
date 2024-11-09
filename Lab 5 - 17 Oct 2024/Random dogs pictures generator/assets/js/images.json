@@ -1,0 +1,21 @@
+[
+    {
+        "path": "assets/img/dog1.jpg",
+        "description": "dog1"
+    },
+
+    {
+        "path": "assets/img/dog2.jpg",
+        "description": "dog2"
+    },
+
+    {
+        "path": "assets/img/dog3.jpeg",
+        "description": "dog3"
+    },
+
+    {
+        "path": "assets/img/dog4.jpg",
+        "description": "dog4"
+    }
+]
