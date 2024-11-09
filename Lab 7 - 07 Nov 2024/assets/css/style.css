@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    background-color: beige;
+}
+
+button {
+    background-color: pink;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+
