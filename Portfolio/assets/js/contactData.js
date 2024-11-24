@@ -1,41 +1,41 @@
-// SAVE FORM DATA TO LOCAL STORAGE
+// SCRIPT FOR SAVING/RETRIEVING FORM DATA IN/FROM LOCAL STORAGE
 
-const form = document.getElementById("contact-form");
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contact-form");
+    const nameField = document.getElementById("name");
+    const surnameField = document.getElementById("surname");
+    const emailField = document.getElementById("email");
+    const messageField = document.getElementById("message");
 
-// Save form data as the user types
-form.addEventListener("input", function() {
-    const nameValue = document.getElementById("name").value;
-    const surnameValue = document.getElementById("surname").value;
-    const emailValue = document.getElementById("email").value;
-    const messageValue = document.getElementById("message").value;
-    
-    // Check if values are being updated
-    console.log(nameValue, surnameValue, emailValue, messageValue); 
-    
-    localStorage.setItem("name", nameValue);
-    localStorage.setItem("surname", surnameValue);
-    localStorage.setItem("email", emailValue);
-    localStorage.setItem("message", messageValue);
-});
+    // Save form data as the user types
+    form.addEventListener("input", function() {
+        const nameValue = nameField.value;
+        const surnameValue = surnameField.value;
+        const emailValue = emailField.value;
+        const messageValue = messageField.value;
+        
+        // Check if values are being updated
+        console.log(nameValue, surnameValue, emailValue, messageValue); 
+        
+        localStorage.setItem("name", nameValue);
+        localStorage.setItem("surname", surnameValue);
+        localStorage.setItem("email", emailValue);
+        localStorage.setItem("message", messageValue);
+    });
 
-// Function to load form data from localStorage
-window.addEventListener("DOMContentLoaded", function() {
+    // Remove message from localStorage when form is submitted
+    form.addEventListener("submit", function() {
+        localStorage.removeItem("message");
+    });
+
+    // Pre-fill form fields with data saved in localStorage
     if (localStorage.getItem("name")) {
-        document.getElementById("name").value = localStorage.getItem("name");
+        nameField.value = localStorage.getItem("name");
     }
     if (localStorage.getItem("surname")) {
-        document.getElementById("surname").value = localStorage.getItem("surname");
+        surnameField.value = localStorage.getItem("surname");
     }
     if (localStorage.getItem("email")) {
-        document.getElementById("email").value = localStorage.getItem("email");
-    }
-    if (localStorage.getItem("message")) {
-        document.getElementById("message").value = localStorage.getItem("message");
+        emailField.value = localStorage.getItem("email");
     }
 });
-
-// Clear localStorage when form is submitted
-form.addEventListener("submit", function() {
-    localStorage.removeItem("message");
-});
-       

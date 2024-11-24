@@ -1,4 +1,4 @@
-// DARK MODE OR LIGHT MODE
+// SCRIPT FOR DARK MODE OR LIGHT MODE
 
 document.addEventListener("DOMContentLoaded", () => {
     const darkModeToggle = document.getElementById("dark-mode-toggle");
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             modeIcon.src = "assets/img/moon.png";
             modeIcon.alt = "Moon icon for dark mode";
 
-            // Remove the dark mode preference from localStorage
+            // Save the light mode preference in localStorage
             localStorage.setItem("theme", "light");
         }
     });

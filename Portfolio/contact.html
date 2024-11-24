@@ -13,10 +13,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <script src="assets/js/darkMode.js"></script>
         <script src="assets/js/activeLink.js"></script>
-        <!-- Include the EmailJS JavaScript SDK for sending form data to my email -->
+        <!-- Include EmailJS JavaScript SDK for sending form data to my email -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        <!-- Initialise the EmailJS service with the provided User ID to authenticate email sending -->
+        <!-- Initialise EmailJS service with the provided User ID to authenticate email sending -->
         <script type="text/javascript"> emailjs.init('7fJsKxMr5eZMreZxc') </script>
+        <script src="assets/js/contactData.js"></script>
+        <script src="assets/js/contactForm.js"></script>
     </head>
     <body>
         <!-- Header section containing the navigation bar -->
@@ -53,10 +55,9 @@
                         <input type="text" name="Surname" id="surname" placeholder="Your surname*" required>
                         <input type="email" name="Email" id="email" placeholder="Your email*" required>
                         <textarea name="Message" id="message" placeholder="Your message*" rows="6" required></textarea>
-                        <!-- Submit button container -->
+                        <!-- Submit button and notification container -->
                         <div class="submit-btn-container">
                             <button type="submit" id="button" class="btn"> Send message </button>
-                            <!-- Notification container -->
                             <div id="notification" class="notification"></div>
                         </div>    
                         <!-- Privacy notice -->
@@ -94,7 +95,5 @@
                  Functionality referenced from https://en.wikipedia.org/wiki/Copyright_symbol (Accessed October 17, 2024). -->
             <small> Copyright &#169; 2024 Nithya Lokuge. All rights reserved. </small>
         </footer>
-        <script src="assets/js/contactData.js"></script>
-        <script src="assets/js/contactForm.js"></script>
     </body>
 </html> 

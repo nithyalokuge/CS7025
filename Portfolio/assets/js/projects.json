@@ -11,7 +11,7 @@
         "title": "3D Game Modelling",
         "description": "3DS Max",
         "image": "assets/img/modelling.webp",
-        "category": "3d",
+        "category": "3d_modelling",
         "link": "gameModelling.html"
     },
     
@@ -19,7 +19,7 @@
         "title": "Twine Story",
         "description": "Twine",
         "image": "assets/img/console.webp",
-        "category": "story",
+        "category": "games",
         "link": "twine.html"
     }
 ]
