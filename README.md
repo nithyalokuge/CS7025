@@ -15,4 +15,5 @@ These labs include practical exercises to provide hands-on experience with the c
 - **Lab 5 (17 Oct 2024):** JavaScript Objects
 - **Lab 6 (31 Oct 2024):** OOP
 - **Lab 7 (07 Nov 2024):** Storage
+- **Lab 8 (21 Nov 2024):** Databases
 
