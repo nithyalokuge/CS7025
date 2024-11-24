@@ -1,4 +1,4 @@
-// SEND FORM DATA TO MY EMAIL USING EMAILJS (https://www.emailjs.com/) 
+// SCRIPT FOR SENDING FORM DATA TO MY EMAIL USING EMAILJS (https://www.emailjs.com/) 
 
 document.addEventListener("DOMContentLoaded", function() {
     const btn = document.getElementById("button");
