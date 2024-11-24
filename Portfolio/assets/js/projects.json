@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Audio Editing",
+        "description": "Audacity",
+        "image": "assets/img/Emirates.png",
+        "category": "audio",
+        "link": "audioediting.html"
+    },
+
+    {
+        "title": "3D Game Modelling",
+        "description": "3DS Max",
+        "image": "assets/img/modelling.webp",
+        "category": "3d",
+        "link": "gamemodelling.html"
+    },
+    
+    {
+        "title": "Twine Story",
+        "description": "Twine",
+        "image": "assets/img/console.webp",
+        "category": "story",
+        "link": "twine.html"
+    }
+]

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Ensure the page scales correctly on different devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Nithya Lokuge - Twine Story Project </title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Preconnect to Google Fonts to optimise performance.
+             Import Poppins font family from Google Fonts. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="assets/js/darkMode.js"></script>
+        <script src="assets/js/activeLink.js"></script>
+        <script src="assets/js/progressBar.js"></script>
+    </head>
+    <body>
+        <!-- Header section containing the navigation bar -->
+        <header>
+            <nav>
+                <!-- Website logo -->
+                <div class="logo"> Nithya Lokuge </div>
+                <!-- Navigation links to other pages on the site -->
+                <ul class="nav-links">
+                    <li><a href="homePage.html"> Home </a></li>
+                    <li><a href="about.html"> About </a></li>
+                    <li><a href="projects.html"> Projects </a></li>
+                    <li><a href="contact.html"> Contact </a></li>
+                </ul>
+                <button id="dark-mode-toggle">
+                    <img id="mode-icon" src="assets/img/moon.png" alt="Moon icon for dark mode"></img>
+                </button>
+            </nav>
+        </header>
+        
+        <!-- Main content container for Project 3 page -->
+        <div class="project-page-container">
+            <!-- Main heading of the page -->
+            <h1> Twine Story </h1>
+
+            <!-- Overview section -->
+            <div class="section">
+                <h3> Overview </h3>
+                <p> 
+                    This project focuses on creating an interactive story using Twine, a tool for building branching narratives.
+                </p>
+            </div>
+
+            <!-- Objective section -->
+            <div class="section">
+                <h3> Objective </h3>
+                <p> 
+                    The goal is to develop a playable interactive story.
+                </p>
+            </div>
+
+            <!-- Requirements section -->
+            <div class="section">
+                <h3> Key Requirements </h3>
+                <ul>
+                    <li> Publish the game on a public platform like "Itch.io". </li>
+                    <li> The story must include at least 30 nodes. </li>
+                    <li> Include at least one critical choice that alters the player’s experience. </li>
+                    <li> Modify the aesthetic presentation (e.g., background, font, image or sound). </li>
+                    <li> Demonstrate thoughtful design in story structure, branching narratives, point of view, etc. </li>
+                    <li> Ensure proper spelling and grammar throughout the story. </li>
+                </ul>
+            </div>
+
+            <!-- Outcome section (pictures, links) -->
+            <div class="section">
+                <h3> Outcome </h3>
+                <div class="placeholder"> 
+
+                    <div class="custom-progress-bar" id="progress-bar-3">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span id="progress-text-3"></span>
+                    Available by January 25, 2025
+                    
+                </div>
+            </div>
+
+            <!-- Buttons container for visiting the previous project or next one -->
+            <div class="prev-next-btn-container">
+                <button class="prev-next-btn" role="link" onclick="window.location.href='gameModelling.html'"> Previous project </button>
+                <button class="prev-next-btn" role="link" onclick="window.location.href='audioEditing.html'"> Next project </button>
+            </div>
+    
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            <ul class="nav-links">
+                <li><a href="homePage.html"> Home </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="projects.html"> Projects </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+            <!-- Copyright notice.
+                 Functionality referenced from https://en.wikipedia.org/wiki/Copyright_symbol (Accessed October 17, 2024). -->
+            <small> Copyright &#169; 2024 Nithya Lokuge. All rights reserved. </small>
+        </footer>
+    </body>
+</html> 

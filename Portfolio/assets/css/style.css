@@ -1,0 +1,629 @@
+/* Global style */
+
+* {
+    /* Remove default margin from all elements */
+    margin: 0;
+    /* Remove default padding from all elements */
+    padding: 0;
+    /* Include padding and border in the total width and height of an element.
+       Functionality referenced from https://www.w3schools.com/css/css3_box-sizing.asp (Accessed October 17, 2024). */
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+
+body {
+    background-color: rgb(251, 248, 248);
+    color: #2C2C2C;
+}
+
+body.dark-mode {
+    background-color: #2C2C2C; 
+    color: rgb(251, 248, 248);
+}
+
+body.dark-mode a {
+    color: #A8B2C8;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    /* Underlined style to links on hover. 
+       Functionality referenced from https://www.w3schools.com/cssref/css3_pr_text-underline-offset.php (Accessed October 17, 2024). */
+    text-underline-offset: 1rem;
+}
+
+a.active {
+    text-decoration: underline; 
+    text-underline-offset: 1rem; 
+    font-weight: bold;
+}
+
+body.dark-mode a.active {
+    color: #f9f9f9; 
+}
+
+header {
+    padding: 1.5rem 6%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    min-height: 15vh;
+}
+
+body.dark-mode header {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.logo {
+    font-size: 2rem;
+    color: #2C3E50;
+    font-weight: 600;
+    cursor: default;
+    flex: 1;
+}
+
+body.dark-mode .logo {
+    color: #e0e8fd; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    margin-top: 0.5rem;
+    gap: 2rem;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+#dark-mode-toggle {
+    margin-left: 2rem;  
+    padding: 0.5rem 1rem;
+    background-color: #A8B2C8;
+    border: none;
+    border-radius: 5000px;
+}
+
+#dark-mode-toggle img {
+    margin-top: 5px;
+    width: 20px;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    min-height: 5vh;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer small {
+    margin-top: 1rem;
+}
+
+/* Home Page style */
+
+.homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    padding: 0 11rem;
+}
+
+.homepage-content-row {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic-container img {
+    width: 18.75rem;
+    border-radius: 50%;
+    border: 4px solid #E8E9ED;
+}
+
+.homepage-text-container {
+    text-align: center;
+}
+
+/* Animation for the Home Page heading. 
+   Functionality referenced from https://css-tricks.com/almanac/properties/a/animation/ (Accessed October 17, 2024). */
+.homepage-text-container h1 {
+    /* Heading fades in smoothly */
+    animation: fadeIn 1.5s ease-out; 
+}
+
+/* Keyframes for fadeIn animation. 
+   Functionality referenced from https://css-tricks.com/almanac/properties/a/animation/ (Accessed October 17, 2024). */
+@keyframes fadeIn {
+    /* Heading starts fully transparent sliding down from above. It ends fully visible in its original position. */
+    0% { opacity: 0; transform: translateY(-20px); } 
+    100% { opacity: 1; transform: translateY(0); }    
+}
+
+.role-description {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-top: 0.50rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.btn {
+    background-color: #A8B2C8;
+    font-weight: 600;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: #333;
+    /* The button will transform over 0.3 seconds whenever it changes state (like on hover).
+       The transformation will start quickly and then slow down, creating a polished visual effect (ease).
+       Functionality referenced from https://developer.mozilla.org/en-US/docs/Web/CSS/transition and 
+       https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions (Both accessed October 17, 2024). */
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    /* Scale up the button on hover.
+       Functionality referenced from https://developer.mozilla.org/en-US/docs/Web/CSS/transition and 
+       https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions (Both accessed October 17, 2024). */
+    transform: scale(1.1);
+}
+  
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.icon {
+    height: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* About page style */
+
+.about-container {
+    padding: 0 11rem;
+    min-height: 75vh;
+}
+
+.section-text1 h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-content-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    justify-content: space-between; 
+}
+
+.about-pic-container {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    max-width: 30rem; 
+}
+
+.about-pic-container img {
+    width: 100%; 
+    height: auto; 
+}
+
+.about-pic-description {
+    margin-top: 1rem;
+    flex: 1; 
+    line-height: 1.4;
+    text-align: justify;
+    padding: 1rem; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.education {
+    margin-top: 3rem;
+}
+
+.section-text2 h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.education-content-row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.master-content, .bachelor-content {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(120, 110, 110, 0.05);
+    width: 45%;
+}
+
+body.dark-mode .master-content, 
+body.dark-mode .bachelor-content {
+    background-color: #333333;
+}
+
+.section-text3 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.master-content h4, .bachelor-content h4 {
+    margin-bottom: 0.5rem;
+}
+
+.master-content small, .bachelor-content small {
+    color: #2a4569;
+    font-weight: 600;
+}
+
+body.dark-mode .master-content small, body.dark-mode .bachelor-content small {
+    color: #A8B2C8;
+}
+
+.master-content p, .bachelor-content p {
+    margin: 0.5rem 0;
+}
+
+.skills {
+    margin-top: 3rem;
+}
+
+.skills-content-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    background-color:  #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 30%;
+    text-align: center;
+}
+
+body.dark-mode .skill {
+    background-color: #333333;
+}
+
+.skill h4 {
+    margin-bottom: 1rem;
+}
+
+.skill p {
+    margin-bottom: 0.5rem;
+}
+
+.languages {
+    margin-top: 3rem;
+}
+
+.languages-content-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.mother-language-content, .second-language-content {
+    background-color:  #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 45%;
+    text-align: center;
+}
+
+body.dark-mode .mother-language-content,
+body.dark-mode .second-language-content {
+    background-color: #333333;
+}
+
+.mother-language-content h4, .second-language-content h4 {
+    margin-bottom: 1rem;
+}
+
+/* Project page style */
+
+.projects-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    min-height: 75vh;
+}
+
+#projects-container {
+    display: flex;
+    gap: 3rem;
+    /* Projects will be distibuted on multiple lines when they exceed the container’s width */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 9rem;
+}
+
+.filter-buttons { 
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem; 
+}
+
+.filter-buttons button {
+    background-color: #A8B2C8;
+    font-weight: 600;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: #333;
+    transition: transform 0.3s ease;
+}
+
+.filter-buttons button:hover { 
+    transform: scale(1.1);
+}
+
+.project-card {
+    text-align: center;
+    width: 16rem;
+}
+
+.image-container {
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 16rem;
+    height: 16rem;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #A8B2C8;
+    opacity: 0;
+    color:#2C2C2C;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: opacity 0.3s;
+    border-radius: 1rem;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.project-info {
+    margin-top: 0.75rem; 
+    text-align: center;
+}
+
+.project-info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project-text {
+    margin-bottom: 2rem;
+}
+
+/* Single project page style */
+
+.project-page-container {
+    width: 80%;
+    margin: 1.25rem auto;
+    min-height: 75vh;
+    padding: 0 11rem;
+}
+
+.project-page-container h1 {
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section {
+    margin-bottom: 1.25rem;
+}
+
+.section h3 {
+    border-bottom: 0.10rem solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+body.dark-mode .section h3 {
+    border-bottom: 0.15rem solid #888; 
+}
+
+.section ul {
+    padding-left: 1.25rem;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+.custom-progress-bar {
+    width: 80%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #A8B2C8; 
+    /* Starts at 0% */
+    width: 0%; 
+    transition: width 0.5s ease; 
+}
+
+#progress-text-1, #progress-text-2, #progress-text-3{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.placeholder {
+    background-color: #ccc;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    font-size: 18px;
+    border: 0.1rem dashed #333;
+}
+
+.prev-next-btn-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    margin-top: 1.50rem;
+}
+
+.prev-next-btn {
+    background-color: #A8B2C8;
+    font-weight: 600;
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 2rem;
+    border: #333;
+    transition: transform 0.3s ease;
+}
+
+.prev-next-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Contact page style */
+
+.contact-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+  
+.contact-container {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 75vh;
+}
+
+.form-container {
+    width: 50%; 
+}
+  
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.form-container form input,
+.form-container form textarea {
+    width: 100%; 
+    padding: 1rem;
+    margin: 0.5rem 0; 
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+.submit-btn-container {
+    margin-top: 1rem;
+}
+
+.submit-btn-container .btn {
+    width: 10rem;
+}
+
+.notification {
+    background-color: #A8B2C8; 
+    color: #2C2C2C;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none; 
+    font-weight: 600;
+    margin-top: 10px; 
+    opacity: 0;
+    width: auto;  
+    max-width: 300px; 
+    text-align: center; 
+}
+  
+.notification.show {
+    display: block;
+    opacity: 1;
+}
+
+.privacy-notice {
+    margin-top: 1rem;
+}

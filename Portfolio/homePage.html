@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Ensure the page scales correctly on different devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Nithya Lokuge - Home Page </title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <!-- Preconnect to Google Fonts to optimise performance.
+             Import Poppins font family from Google Fonts. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="assets/js/darkMode.js"></script>
+        <script src="assets/js/activeLink.js"></script>
+    </head>
+    <body>
+        <!-- Header section containing the navigation bar -->
+        <header>
+            <nav> 
+                <!-- Website logo -->
+                <div class="logo"> Nithya Lokuge </div>
+                <!-- Navigation links to other pages on the site -->
+                <ul class="nav-links">
+                    <li><a href="homePage.html"> Home </a></li>
+                    <li><a href="about.html"> About </a></li>
+                    <li><a href="projects.html"> Projects </a></li>
+                    <li><a href="contact.html"> Contact </a></li>
+                </ul>
+                <button id="dark-mode-toggle">
+                    <img id="mode-icon" src="assets/img/moon.png" alt="Moon icon for dark mode"></img>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main content container for the Homepage -->
+        <div class="homepage-container">
+            <div class="homepage-content-row">
+                <!-- Profile picture section -->
+                <div class="profile-pic-container">
+                    <img src="assets/img/profile.jpg" alt="Nithya Lokuge's profile picture">
+                </div>
+
+                <!-- Text content section -->
+                <div class="homepage-text-container">
+                    <div>
+                        <!-- Main heading of the page -->
+                        <h1> Hello! I'm Nithya </h1>
+                        <!-- Brief description of my role -->
+                        <p class="role-description"> 
+                            - an aspiring Web Developer & UI/UX Designer <br> 
+                            with a Systems and Networks Security background. 
+                        </p>
+                    </div>
+                    <!-- Buttons container -->
+                    <div class="btn-container">
+                        <button class="btn" onclick="window.open('./assets/CV.pdf')"> Check my CV </button>
+                        <button class="btn" role="link" onclick="window.location.href='contact.html'"> Contact me </button>
+                    </div>
+                    <!-- Social media links section -->
+                    <div class="social-media-container">
+                        <a href="https://www.linkedin.com/in/nithyalokuge/" target="_blank"> 
+                            <!-- Image from https://icon-icons.com/icon/linkedin-black-logo/147114 (Accessed October 17, 2024). -->
+                            <img class="icon" src="assets/img/linkedin.png" alt="My LinkedIn profile" title="LinkedIn">
+                        </a>
+                        <a href="https://github.com/nithyalokuge" target="_blank"> 
+                            <!-- Image from https://icon-icons.com/icon/github-logo/73546 (Accessed October 17, 2024). -->
+                            <img class="icon" src="assets/img/github.png" alt="My GitHub profile" title="GitHub">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            <ul class="nav-links">
+                <li><a href="homePage.html"> Home </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="projects.html"> Projects </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+            <!-- Copyright notice.
+                 Functionality referenced from https://en.wikipedia.org/wiki/Copyright_symbol (Accessed October 17, 2024). -->
+            <small> Copyright &#169; 2024 Nithya Lokuge. All rights reserved. </small>
+        </footer>
+    </body>
+</html> 

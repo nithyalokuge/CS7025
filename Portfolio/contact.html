@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Ensure the page scales correctly on different devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Nithya Lokuge - Contact </title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Preconnect to Google Fonts to optimise performance.
+             Import Poppins font family from Google Fonts. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="assets/js/darkMode.js"></script>
+        <script src="assets/js/activeLink.js"></script>
+        <!-- Include the EmailJS JavaScript SDK for sending form data to my email -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <!-- Initialise the EmailJS service with the provided User ID to authenticate email sending -->
+        <script type="text/javascript"> emailjs.init('7fJsKxMr5eZMreZxc') </script>
+    </head>
+    <body>
+        <!-- Header section containing the navigation bar -->
+        <header>
+            <nav>
+                <!-- Website logo -->
+                <div class="logo"> Nithya Lokuge </div>
+                <!-- Navigation links to other pages on the site -->
+                <ul class="nav-links">
+                    <li><a href="homePage.html"> Home </a></li>
+                    <li><a href="about.html"> About </a></li>
+                    <li><a href="projects.html"> Projects </a></li>
+                    <li><a href="contact.html"> Contact </a></li>
+                </ul>
+                <button id="dark-mode-toggle">
+                    <img id="mode-icon" src="assets/img/moon.png" alt="Moon icon for dark mode"></img>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main content container for the Contact page -->
+        <div class="contact-page-container">
+            <!-- Main heading of the page -->
+            <div class="section-text3">
+                <h1> Let's get in touch! Contact me </h1>
+            </div>
+
+            <!-- Contact form section -->
+            <div class="contact-container">
+
+                <div class="form-container">
+                    <form id="contact-form">
+                        <input type="text" name="Name" id="name" placeholder="Your name*" required>
+                        <input type="text" name="Surname" id="surname" placeholder="Your surname*" required>
+                        <input type="email" name="Email" id="email" placeholder="Your email*" required>
+                        <textarea name="Message" id="message" placeholder="Your message*" rows="6" required></textarea>
+                        <!-- Submit button container -->
+                        <div class="submit-btn-container">
+                            <button type="submit" id="button" class="btn"> Send message </button>
+                            <!-- Notification container -->
+                            <div id="notification" class="notification"></div>
+                        </div>    
+                        <!-- Privacy notice -->
+                        <small class="privacy-notice"> 
+                            *The information provided in this form will only be used to respond to your inquiries. <br>
+                            Your data will be handled securely and will not be shared with anyone. 
+                        </small>
+                    </form>
+                    <!-- Social media links section -->
+                    <div class="social-media-container">
+                        <a href="https://www.linkedin.com/in/nithyalokuge/" target="_blank">
+                            <!-- Image from https://icon-icons.com/icon/linkedin-black-logo/147114 (Accessed October 17, 2024). -->
+                            <img class="icon" src="./assets/img/linkedin.png" alt="My LinkedIn profile" title="LinkedIn">
+                        </a>
+                        <a href="https://github.com/nithyalokuge" target="_blank">
+                            <!-- Image from https://icon-icons.com/icon/github-logo/73546 (Accessed October 17, 2024). -->
+                            <img class="icon" src="./assets/img/github.png" alt="My GitHub profile" title="GitHub">
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            <ul class="nav-links">
+                <li><a href="homePage.html"> Home </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="projects.html"> Projects </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+            <!-- Copyright notice.
+                 Functionality referenced from https://en.wikipedia.org/wiki/Copyright_symbol (Accessed October 17, 2024). -->
+            <small> Copyright &#169; 2024 Nithya Lokuge. All rights reserved. </small>
+        </footer>
+        <script src="assets/js/contactData.js"></script>
+        <script src="assets/js/contactForm.js"></script>
+    </body>
+</html> 
