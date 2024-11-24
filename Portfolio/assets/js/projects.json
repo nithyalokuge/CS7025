@@ -4,7 +4,7 @@
         "description": "Audacity",
         "image": "assets/img/Emirates.png",
         "category": "audio",
-        "link": "audioediting.html"
+        "link": "audioEditing.html"
     },
 
     {
@@ -12,7 +12,7 @@
         "description": "3DS Max",
         "image": "assets/img/modelling.webp",
         "category": "3d",
-        "link": "gamemodelling.html"
+        "link": "gameModelling.html"
     },
     
     {
