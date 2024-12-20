@@ -17,11 +17,10 @@ function progress(progressId, textId, value) {
 document.addEventListener("DOMContentLoaded", function() {
     // Set different progress for each project
     if (document.getElementById("progress-bar-1")) {
-        progress("progress-bar-1", "progress-text-1", 90); 
+        progress("progress-bar-1", "progress-text-1", 99); 
     }
-
     if (document.getElementById("progress-bar-2")) {
-        progress("progress-bar-2", "progress-text-2", 50); 
+        progress("progress-bar-2", "progress-text-2", 99); 
     }
     if (document.getElementById('progress-bar-3')) {
         progress("progress-bar-3", "progress-text-3", 1); 
