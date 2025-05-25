@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
         btn.innerHTML = "Sending...";  
         btn.disabled = true;  
   
-        const serviceID = "default_service";
-        const templateID = "template_d6wnjtj";
+        const serviceID = ""; //Insert ID here
+        const templateID = ""; //Insert ID here
   
         emailjs.sendForm(serviceID, templateID, this).then(
             () => {
